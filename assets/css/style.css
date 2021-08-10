@@ -1,0 +1,361 @@
+/* COMMON */
+*{
+padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+.clear::before{
+    clear: both;
+}
+.col{
+    width:50%;
+}
+.mt-8{
+    margin: 8px;
+}
+/* HEADER */
+#header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 46px;
+    background-color: #000;
+    z-index: 1;
+    overflow: hidden;
+}
+.btn-search,
+.btn-menu{
+    float: right;
+    color: #fff;
+    line-height: 46px;
+    padding: 0 16px;
+}
+.btn-search:hover{
+    background-color: #f44336
+}
+/* NAV,SUBNAV  */
+#nav{
+    display: inline-flex;
+}
+#nav li{
+    line-height: 46px;
+    list-style-type: none;
+}
+#nav li a{
+    color: #fff;
+    text-decoration: none;
+
+}
+#nav > li > a {
+    display: block;
+    padding: 0 24px; 
+    text-transform: uppercase;
+}
+#nav > li:hover > a,
+#nav .subnav li:hover a,
+.modal-close:hover,
+.btn-menu:hover
+{
+    background-color: #ccc;
+    color: #000;
+}
+.btn-menu:hover i{
+    color: #000;
+}
+#nav .subnav{
+    position: absolute;
+    background-color: #fff;
+    width: 160px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: none;
+}
+#nav .subnav a{
+    display: block;
+    line-height: 38px;
+    color: #000;
+    padding: 0 12px;
+}
+#nav li:hover .subnav {
+    display: block;
+}
+/* SLIDER */
+#slider{
+    position: relative;
+    top: 46px;
+    padding-top: 50%;
+    margin-bottom: 54px;
+    background: url('/assets/img/slider/slider2.jpg') top center / cover no-repeat;
+}
+.slider-text{
+    position: absolute;
+    bottom: 47px;
+    color: #fff;
+    left: 50%;
+    transform:translateX(-50%)
+}
+.slider-title{
+    text-align: center;
+    font-weight: 500;
+    padding-bottom: 25px;
+}
+/* CONTENT  */
+#content{}
+.content-section{
+    padding: 64px 16px;
+    width: 800px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.content-heading{
+    text-align: center; 
+    padding: 10px;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 4px;
+}
+.content-subheading{
+    text-align: center; 
+    padding: 15px;
+    font-size: 15px;
+    opacity: 0.4;
+    font-style: italic;
+}
+.content-about{
+    text-align: justify;
+    line-height: 1.4;
+    font-size:  15px;
+}
+/* CONTEN_TEAM  */
+.content-team{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 32px 0;
+}
+.team-name{
+    padding: 15px 0;
+    font-size: 16px;
+    text-align: center;
+}
+.team-img{
+    border-radius: 5px;
+    width: 154px;
+}
+
+/* TOUR  */
+.container-tour{
+    background: #000;
+    color: #fff;
+}
+.tickets-date {
+    padding: 15px 0;
+}
+.tickets-date li{
+    padding: 8px 16px;
+    font-size: 15px;
+    background: #fff;
+    color: #757575;
+    border-bottom: 1px solid #ccc;
+    list-style-type: none;
+}
+.sold-out{
+    margin-left: 16px;
+    color: #fff;
+    background: #f44336;
+    padding: 3px 8px;
+}
+.tickets-quantity{
+    float: right;
+    background: #000;
+    color: #fff;
+    border-radius: 50%;
+    padding: 4px 8px;
+    margin-top: -3px;
+}
+/* TOUR_LIST  */
+.tickets-list{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -8px;
+    padding-bottom: 32px;
+}
+.list-section{
+    width: 33.33333%;
+    padding: 32px 8px;
+}
+.list-img{
+    width: 100%;
+    display: block;
+}
+.list-text{
+    padding: 0 16px;
+    background: #fff;
+    color: #000;
+    font-size: 15px;
+}
+.list-title{
+    padding: 15px 0;
+}
+.list-date{
+    opacity: 0.6;
+    padding-bottom: 15px;
+}
+.list-btn{
+    margin: 16px 0;
+    padding: 10px 16px;
+    background: #000;
+    color: #fff;
+    border: none;
+    font-weight: 550;
+}
+.list-btn:hover{
+    cursor: pointer;
+    color: #000;
+    background: #ddd;
+}
+/* CONTACT  */
+.contact-form,
+.info-input{
+    display: flex;
+    justify-content: space-between;
+}
+.contact-form{
+    padding: 32px 0;
+}
+.contact-location{
+    font-size: 18px;
+    margin-bottom: 16px;
+    line-height:1.6;
+}
+.contact-info input{
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+}
+.btn-send button{
+    float: right;
+    padding: 10px 16px;
+    background-color: #000;
+    color: #fff;
+    font-size: 15px;
+    border: none;
+}
+.btn-send:hover button{
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+/* IMG */
+.content-img img{
+    width: 100%;
+}
+/* FOOTER  */
+#footer{
+    padding: 64px 32px;
+    opacity: 0.7;
+}
+.footer-icon{
+    text-align: center;
+    font-size: 25px;
+}
+.footer-icon a{
+    text-decoration: none;
+    color: gray;
+}
+.footer-text{
+    text-align: center;
+    margin: 15px 0;
+    font-size: 16px;
+}
+
+/* MODAL  */
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding-top: 100px;
+    background:rgba(0, 0, 0, 0.3);
+    display:none;
+    justify-content:center;
+    align-items:center;
+}
+.modal.open-modal{
+    display: flex;  
+}
+.modal-container{
+    background: #fff;
+    width: 600px;
+    max-width: calc(100%-16px);
+    position: relative;
+    animation: fadeIn ease 0.5s;
+}
+/* MODAL HEADER  */
+.modal-header {
+    padding: 32px 16px;
+    background: #009688;
+    font-size: 32px;
+    color: #fff;
+    letter-spacing: 4px;
+    font-weight: 400;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.modal-close{
+    position:absolute;
+    right: 0;
+    padding: 16px;
+    color: #fff;
+}
+/* MODAL BODY  */
+.modal-body{
+    padding: 16px;
+}
+label{
+    display: block;
+    padding-bottom: 12px;
+}
+input{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+.quantity-tickets{
+    padding-bottom: 24px;
+}
+.btn-pay{
+    width: 100%;
+    padding: 16px;
+    margin: 16px 0;
+    background-color: #009688;
+    border: none;
+    color: #fff;
+    font-size: 15px;
+}
+/* MODAL FOOTER  */
+.modal-footer{
+    float: right;
+    margin: 16px;
+}
+.modal-footer a{
+    color: #2196f3;
+}
+/* MODAL FADE IN  */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform:translateY(-100%)
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0%)
+    }
+}
+/* RESPONSIVE  */
