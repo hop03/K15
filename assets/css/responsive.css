@@ -10,12 +10,21 @@
 
 /* MOBILE */
 @media (max-width: 740px){
+    #header{
+        overflow: hidden;
+    }
     #nav{
-        display: inline-block;
+        display: block;
+    }
+    #nav li{
+        display: block;  
     }
     
     .btn-search{
         display:none;
+    }
+    #menu{
+        display: block;
     }
 
     .btn-menu i{

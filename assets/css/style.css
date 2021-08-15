@@ -26,7 +26,12 @@ html{
     height: 46px;
     background-color: #000;
     z-index: 1;
-    overflow: hidden;
+}
+#menu{
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 .btn-search,
 .btn-menu{
@@ -45,6 +50,9 @@ html{
 #nav li{
     line-height: 46px;
     list-style-type: none;
+}
+#nav li:first-child{
+    display: inline-block;
 }
 #nav li a{
     color: #fff;
