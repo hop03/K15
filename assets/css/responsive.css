@@ -10,8 +10,12 @@
 
 /* MOBILE */
 @media (max-width: 740px){
+    /* MOBILE HEADER  */
     #header{
         overflow: hidden;
+    }
+    #menu{
+        display: block;
     }
     #nav{
         display: block;
@@ -19,15 +23,51 @@
     #nav li{
         display: block;  
     }
-    
+    #nav li a{
+        padding: 1px 24px;
+    }
+
+    #nav .subnav{
+        position:initial;
+        background-color: #000;
+    }
+    #nav .subnav a{
+        color: #fff;
+        padding: 5px 41px;
+    }
     .btn-search{
         display:none;
-    }
-    #menu{
-        display: block;
     }
 
     .btn-menu i{
         color: #fff;
     }
+
+    /* MOBILE TEAM  */
+    .content-team,
+    .tickets-list,
+    .contact-form,
+    .info-input
+    {
+        flex-wrap: wrap;
+    }
+    .team-img,
+    .list-section,
+
+    /* COMMON */
+    .col,
+    .full-width
+    {
+        width: 100%;
+    }
+    .list-btn,
+    .btn-send 
+    {
+        padding: 16px 0;
+    }
+    .modal{
+        padding-top: 0 ;
+    }
+
+
 }
