@@ -1,0 +1,31 @@
+{
+  "name": "k15",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "nodemon --inspect src/index.js",
+    "watch": "sass --watch src/resources/scss/index.scss src/public/css/index.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hop03/tranvanhop_k15_Nodemy.git"
+  },
+  "author": "hop",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hop03/tranvanhop_k15_Nodemy/issues"
+  },
+  "homepage": "https://github.com/hop03/tranvanhop_k15_Nodemy#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.4",
+    "handlebars": "^4.7.7"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.13",
+    "sass": "^1.42.1"
+  }
+}
