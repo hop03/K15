@@ -3,7 +3,9 @@
             <div class="theme_toogle">
                 <button class="theme_toogle_btn"></button>
             </div>
-            <span class="heading" style="text-align: center">TO-DO-LIST</span>
+
+            {{#each Users}}<span class="heading" style="text-align: center">TO-DO-LIST of {{this.name}}</span> {{/each}}
+
         </header>
         <section class="tasks">
             <ul id="tasksList"></ul>
